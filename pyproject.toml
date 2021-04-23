@@ -1,3 +1,38 @@
+[tool]
+[tool.poetry]
+name = "cosmos-wfm"
+version = "2.13.8"
+description = "Workflow Management System"
+packages = [
+    {include = "cosmos"}
+]
+license = "GPL v3"
+keywords = ["workflow", "machine", "learning", "ipeline", "ngs", "manager", "management", "distributed", "sge", "slurm", "genomics", "sequencing", "grid", "computing", "scientific"]
+classifiers = ["Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Intended Audience :: Developers", "License :: OSI Approved :: GNU General Public License v3 (GPLv3)", "Operating System :: MacOS", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "Programming Language :: Python", "Topic :: Software Development", "Topic :: Utilities"]
+homepage = "https://mizzou-cbmi.github.io/"
+authors = ["Erik Gafni <egafni@gmail.com>", "Erik Gafni <egafni@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+blinker = "*"
+boto3 = "*"
+decorator = "*"
+drmaa = "*"
+funcsigs = "*"
+more-itertools = "*"
+networkx = ">=2.0"
+python-dateutil = "*"
+six = "*"
+sqlalchemy = "*"
+
+[tool.poetry.dev-dependencies]
+sphinx-rtd-theme = "*"
+black = "*"
+pytest-xdist = "*"
+pytest-timeout = "*"
+ipython = "*"
+flask = "*"
+
 [tool.black]
 line-length = 110
 exclude = "(.eggs|.git|.hg|.mypy_cache|.nox|.tox|.venv|.svn|_build|buck-out|build|dist|docs|cosmos-wfm)"
